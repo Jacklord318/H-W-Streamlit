@@ -1,19 +1,18 @@
-# Hazen-Williams Hydraulic Design Web App
 
-Esta app permite cargar archivos Excel para el diseño de redes hidráulicas cerradas usando la fórmula de Hazen-Williams.
+# App de Visualización de Red Hidráulica (React + ReactFlow)
 
-## Funciones principales
+Este proyecto permite:
+- Cargar datos hidráulicos de nodos y tramos.
+- Calcular pérdidas de carga por Hazen-Williams.
+- Sugerir diámetro económico.
+- Visualizar velocidades y presiones en m.c.a. en los nodos.
 
-- Cálculo de pérdidas por fricción
-- Visualización de la red hidráulica
-- Destacar velocidades fuera de rango
-- Sugerencia de diámetro económico
+## Archivos incluidos
+- `HazenWilliamsApp.tsx` — Código principal React con lógica y visualización.
+- `ejemplo_red_hidraulica.xlsx` — Archivo de ejemplo.
+- `README.md` — Esta guía.
 
-## Cómo ejecutar
-
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-Sube el archivo `ejemplo_red_hidraulica.xlsx` para probar.
+## Cómo usar
+1. Importa `HazenWilliamsApp.tsx` en tu proyecto Vite + React.
+2. Usa el archivo Excel de ejemplo o carga uno con las mismas columnas.
+3. Visualiza el grafo con React Flow y verifica resultados.
